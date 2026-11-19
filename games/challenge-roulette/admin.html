@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Challenge Roulette – Admin</title>
+  <title>Lion's Roulette – Admin</title>
   <link rel="stylesheet" href="../../css/shared.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="lions">
   <div class="topbar"><a href="index.html">← Back to Roulette</a><h1>🔒 Admin Panel</h1></div>
   <main>
     <section id="login" class="card center">
@@ -20,20 +20,19 @@
     </section>
 
     <section id="panel" class="card hidden">
-      <h3>Add a challenge</h3>
+      <h3>Add a gift or challenge</h3>
       <div class="row add-row">
-        <input type="text" id="new-challenge" maxlength="140" placeholder="Type a challenge…">
+        <input type="text" id="new-challenge" maxlength="140" placeholder="Type a gift or challenge…">
         <select id="new-level">
-          <option>Mild</option>
-          <option>Medium</option>
-          <option>Wild</option>
+          <option>Challenge</option>
+          <option>Gift</option>
         </select>
         <button class="btn secondary" id="add-btn">Add</button>
       </div>
-      <p class="muted small">Custom challenges are saved in this browser only.</p>
+      <p class="muted small">Custom items are saved in this browser only.</p>
       <ul id="custom-list" class="custom-list"></ul>
       <div class="row">
-        <button class="btn secondary hidden" id="reset-btn">Clear custom challenges</button>
+        <button class="btn secondary hidden" id="reset-btn">Clear custom items</button>
         <button class="btn secondary" id="logout-btn">Lock</button>
       </div>
     </section>
