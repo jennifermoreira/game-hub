@@ -1,0 +1,17 @@
+.pad {
+  width: 100%;
+  min-height: 45vh;
+  border: 0;
+  border-radius: 20px;
+  font-size: clamp(1.5rem, 6vw, 2.4rem);
+  font-weight: 800;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+.pad.idle { background: var(--surface2); }
+.pad.wait { background: var(--bad); color: #450a0a; }
+.pad.go { background: var(--good); color: #052e16; }
+.pad.early { background: var(--warn); color: #422006; }
+.stats { display: flex; justify-content: space-around; margin-bottom: 18px; color: var(--muted); }
+.stats b { color: var(--text); }

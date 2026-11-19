@@ -1,0 +1,18 @@
+.score { display: flex; justify-content: space-around; margin: 16px 0 6px; color: var(--muted); }
+.score b { color: var(--text); }
+.status { font-weight: 700; min-height: 1.5em; color: var(--warn); }
+.board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-width: 330px; margin: 0 auto 18px; }
+.cell {
+  aspect-ratio: 1;
+  border: 0;
+  border-radius: 12px;
+  background: var(--surface2);
+  font-size: clamp(2.4rem, 14vw, 4rem);
+  font-weight: 800;
+  cursor: pointer;
+  color: var(--text);
+}
+.cell:hover:not(:disabled) { background: #38386b; }
+.cell.x { color: var(--accent); }
+.cell.o { color: var(--accent2); }
+.cell.win { background: var(--good); color: #000; }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heads Up!</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar"><a href="../../index.html">← Back to Hub</a><h1>🎭 Heads Up!</h1></div>
+  <main>
+    <!-- Setup screen -->
+    <section id="setup" class="card">
+      <h2>Category</h2>
+      <div class="row" id="categories"></div>
+      <h2>Difficulty</h2>
+      <div class="row" id="difficulties"></div>
+      <h2>Round length</h2>
+      <div class="row" id="lengths"></div>
+      <p class="muted center">One player holds the screen up to their forehead. Everyone else gives clues (no saying the word!). Tap <b>Got it</b> or <b>Pass</b>. Keyboard: → / Space = Got it, ← = Pass.</p>
+      <div class="center"><button class="btn" id="start-btn">Start round</button></div>
+    </section>
+
+    <!-- Countdown -->
+    <section id="countdown" class="hidden center"><div id="count-num">3</div><p class="muted">Get ready…</p></section>
+
+    <!-- Play screen -->
+    <section id="play" class="hidden">
+      <div class="hud"><span id="hud-cat"></span><span id="timer">60</span><span id="hud-score">0 ✔</span></div>
+      <div id="word-card" class="word-card"><span id="word">—</span></div>
+      <div class="row">
+        <button class="btn bad" id="pass-btn">✖ Pass</button>
+        <button class="btn good" id="got-btn">✔ Got it</button>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="hidden card center">
+      <h2>Time's up!</h2>
+      <div id="final-score" class="big"></div>
+      <div class="lists">
+        <div><h3>✔ Got it</h3><ul id="got-list"></ul></div>
+        <div><h3>✖ Passed</h3><ul id="pass-list"></ul></div>
+      </div>
+      <div class="row">
+        <button class="btn" id="again-btn">Play again</button>
+        <button class="btn secondary" id="setup-btn">Change settings</button>
+      </div>
+    </section>
+  </main>
+  <script src="words.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

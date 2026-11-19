@@ -1,0 +1,88 @@
+:root {
+  --bg: #141428;
+  --surface: #1f1f3d;
+  --surface2: #2a2a52;
+  --text: #f4f4fb;
+  --muted: #a5a5c8;
+  --accent: #ff6b9d;
+  --accent2: #6bc5ff;
+  --good: #4ade80;
+  --bad: #f87171;
+  --warn: #fbbf24;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--surface2);
+}
+.topbar a { color: var(--accent2); text-decoration: none; font-weight: 600; }
+.topbar a:hover { text-decoration: underline; }
+.topbar h1 { margin: 0; font-size: 1.1rem; flex: 1; text-align: center; padding-right: 90px; }
+
+main { max-width: 760px; margin: 0 auto; padding: 20px 16px 40px; }
+
+.btn {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 22px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .1s, opacity .15s;
+}
+.btn:hover { opacity: .9; }
+.btn:active { transform: scale(.97); }
+.btn.secondary { background: var(--surface2); color: var(--text); }
+.btn.good { background: var(--good); color: #052e16; }
+.btn.bad { background: var(--bad); color: #450a0a; }
+.btn:disabled { opacity: .4; cursor: not-allowed; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--surface2);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+.center { text-align: center; }
+.muted { color: var(--muted); }
+.row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; align-items: center; }
+.hidden { display: none !important; }
+
+.chip {
+  background: var(--surface2);
+  color: var(--text);
+  border: 2px solid transparent;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: .95rem;
+  cursor: pointer;
+}
+.chip.active { border-color: var(--accent); background: #3a2a4d; }
+
+input[type="text"], select {
+  background: var(--surface2);
+  color: var(--text);
+  border: 1px solid #3d3d6b;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 1rem;
+}

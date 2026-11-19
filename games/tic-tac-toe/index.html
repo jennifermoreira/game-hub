@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar"><a href="../../index.html">← Back to Hub</a><h1>❌ Tic-Tac-Toe</h1></div>
+  <main class="center">
+    <div class="row">
+      <button class="chip active" id="mode-2p">2 players</button>
+      <button class="chip" id="mode-cpu">vs Computer</button>
+    </div>
+    <div class="score"><span>X: <b id="sx">0</b></span><span>Draws: <b id="sd">0</b></span><span>O: <b id="so">0</b></span></div>
+    <p id="status" class="status"></p>
+    <div id="board" class="board"></div>
+    <button class="btn" id="restart">New round</button>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.hud { display: flex; justify-content: space-around; margin-bottom: 14px; color: var(--muted); }
+.hud b { color: var(--text); }
+.mole-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 360px; margin: 0 auto 16px; }
+.hole {
+  aspect-ratio: 1;
+  border: 0;
+  border-radius: 50%;
+  background: #3b2a1a;
+  font-size: clamp(2.2rem, 12vw, 3.6rem);
+  cursor: pointer;
+  box-shadow: inset 0 -8px 0 rgba(0, 0, 0, .35);
+}
+.hole.up { background: #6b4a2b; }
+.msg { min-height: 1.5em; font-weight: 700; color: var(--warn); }
