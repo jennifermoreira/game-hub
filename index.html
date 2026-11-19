@@ -3,46 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Game Hub</title>
-  <link rel="stylesheet" href="css/shared.css">
-  <link rel="stylesheet" href="css/dashboard.css">
+  <title>Lion's Roulette</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header class="hero">
-    <h1><button type="button" id="admin-trigger" class="icon-btn" aria-label="Admin">🎮</button> Game Hub</h1>
-    <p>Can't decide what to play? Pick a game below, or let us choose for you.</p>
-  </header>
-
+<body class="lions">
+  <div class="topbar"><a href="../../index.html">← Back to Hub</a><h1>🦁 Lion's Roulette</h1></div>
   <main>
-    <div class="controls">
-      <div class="row">
-        <button class="chip active" data-filter="all">All games</button>
-        <button class="chip" data-filter="solo">Solo</button>
-        <button class="chip" data-filter="multi">With friends</button>
-      </div>
-      <button class="btn" id="pick-btn">🎰 Pick a game for us</button>
-      <div id="pick-result" aria-live="polite"></div>
-    </div>
-
-    <section class="grid" id="grid"></section>
+    <section class="card center">
+      <img class="logo" src="lions-logo.jpg" alt="Lions Cheerleading logo">
+      <div id="challenge-box" class="challenge-box"><span id="challenge-text">Spin the roulette to get a gift or challenge!</span></div>
+      <button class="btn" id="spin-btn">🎰 Spin</button>
+      <p class="muted" id="count-line"></p>
+      <button class="btn secondary hidden" id="reset-btn">Reset roulette</button>
+    </section>
   </main>
-
-  <footer>Made with IBM Bob</footer>
-
-  <div id="admin-modal" class="modal hidden" role="dialog" aria-modal="true" aria-label="Admin login">
-    <div class="card modal-box">
-      <h3>Admin access</h3>
-      <input type="password" id="admin-pass" placeholder="Passcode" autocomplete="off">
-      <p id="admin-msg" class="admin-msg" aria-live="polite"></p>
-      <div class="row">
-        <button class="btn" id="admin-go">Unlock</button>
-        <button class="btn secondary" id="admin-cancel">Cancel</button>
-      </div>
-    </div>
-  </div>
-
-  <script src="js/admin-config.js"></script>
-  <script src="js/games.js"></script>
-  <script src="js/dashboard.js"></script>
+  <script src="challenges.js"></script>
+  <script src="game.js"></script>
 </body>
 </html>
