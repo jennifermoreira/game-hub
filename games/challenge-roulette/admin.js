@@ -35,11 +35,11 @@
       const span = document.createElement("span");
       const tag = document.createElement("span");
       tag.className = "tag";
-      tag.textContent = c.type;
+      tag.textContent = c.level;
       span.append(tag, document.createTextNode(c.text));
       const del = document.createElement("button");
       del.textContent = "✕";
-      del.setAttribute("aria-label", "Remove item");
+      del.setAttribute("aria-label", "Remove challenge");
       del.addEventListener("click", function () {
         custom.splice(i, 1);
         save();
@@ -55,7 +55,7 @@
     const input = $("new-challenge");
     const text = input.value.trim();
     if (!text) return;
-    custom.push({ text: text, type: $("new-level").value });
+    custom.push({ text: text, level: $("new-level").value });
     save();
     input.value = "";
     renderCustom();

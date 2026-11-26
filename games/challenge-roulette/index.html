@@ -3,19 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lion's Roulette</title>
+  <title>Challenge Roulette</title>
   <link rel="stylesheet" href="../../css/shared.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="lions">
-  <div class="topbar"><a href="../../index.html">← Back to Hub</a><h1>🦁 Lion's Roulette</h1></div>
+<body>
+  <div class="topbar"><a href="../../index.html">← Back to Hub</a><h1>🎰 Challenge Roulette</h1></div>
   <main>
     <section class="card center">
-      <img class="logo" src="lions-logo.jpg" alt="Lions Cheerleading logo">
-      <div id="challenge-box" class="challenge-box"><span id="challenge-text">Spin the roulette to get a gift or challenge!</span></div>
+      <div class="row" id="levels"></div>
+      <div id="challenge-box" class="challenge-box"><span id="challenge-text">Spin the roulette to get a challenge!</span></div>
       <button class="btn" id="spin-btn">🎰 Spin</button>
       <p class="muted" id="count-line"></p>
-      <button class="btn secondary hidden" id="reset-btn">Reset roulette</button>
     </section>
   </main>
   <script src="challenges.js"></script>

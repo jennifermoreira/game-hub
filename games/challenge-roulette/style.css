@@ -1,20 +1,4 @@
-/* Lions green & gold theme (this game only) */
-body.lions {
-  --bg: #063c22;
-  --surface: #063c22;
-  --surface2: #0d5232;
-  --accent: #e8b020;
-  --accent2: #f3c94d;
-  --muted: #b9d2c2;
-}
-body.lions .topbar { background: #04301b; border-bottom: 1px solid #e8b020; }
-body.lions .card { border: 1px solid #e8b020; }
-body.lions .btn { color: #063c22; }
-body.lions .btn.secondary { background: var(--surface2); color: var(--text); }
-body.lions input[type="text"], body.lions input[type="password"], body.lions select { border-color: #e8b020; }
-
 main > .card { margin-bottom: 18px; }
-.logo { display: block; width: 220px; max-width: 70%; height: auto; margin: 0 auto 6px; }
 .challenge-box {
   display: flex;
   align-items: center;
@@ -28,7 +12,7 @@ main > .card { margin-bottom: 18px; }
   font-weight: 700;
 }
 .challenge-box.spinning { opacity: .6; }
-.challenge-box.done { background: #0a4a2c; border: 2px solid var(--accent); }
+.challenge-box.done { background: #3a2a4d; border: 2px solid var(--accent); }
 .add-row input { flex: 1; min-width: 200px; }
 .small { font-size: .85rem; }
 .custom-list { list-style: none; padding: 0; margin: 10px 0; text-align: left; }
