@@ -13,9 +13,9 @@ const GAMES = [
   },
   {
     id: "challenge-roulette",
-    title: "Lion's Roulette",
-    icon: "🦁",
-    description: "Spin for a random gift or challenge. Each one can only be drawn once.",
+    title: "Challenge Roulette",
+    icon: "🎰",
+    description: "Spin for a random challenge. Pick a spice level: Mild, Medium or Wild.",
     path: "games/challenge-roulette/index.html",
     players: "multi",
     playersLabel: "2+ players",
